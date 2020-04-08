@@ -27,17 +27,19 @@ public class Departement {
         }
         else
         {
-            System.out.println("Attention ! VOus ne pouvez plus rajouter de ville.")
+            System.out.println("Attention ! VOus ne pouvez plus rajouter de ville.");
         }
     }
 
-    public void toString()
+    public String toString()
     {
-        System.out.println("Ville du département "+nom+" :");
+        String s="Ville du département "+nom+" :\n";
         for(int i=0;i<tabVilles.length;i++)
         {
-            tabVilles[i].toString();
+            s+=tabVilles[i].toString();
         }
+
+        return s;
     }
 }
 
