@@ -3,18 +3,22 @@ public class Departement {
     private Ville tabVilles[];
     private int numero;
     private String nom;
-    private int nbVillesSaisies=0;
+    private int nbVillesSaisies;
 
     //constructor
     public Departement()
     {
-
+        this.nom="";
+        this.numero=0;
+        this.tabVilles=null;
+        this.nbVillesSaisies=0;
     }
     public Departement(int nbVilles,String nom, int numero)
     {
         this.tabVilles=new Ville[nbVilles];
         this.nom=nom;
         this.numero=numero;
+        this.nbVillesSaisies=0;
     }
 
     public void ajouterVille(Ville ville)
