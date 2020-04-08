@@ -4,6 +4,7 @@ public class Ville
     private double supperfie;
     private  int population;
 
+    ///////////////////////////////////////CONSTRUCTEURS
     public Ville()
     {
         nom="inconnu";
@@ -16,6 +17,12 @@ public class Ville
         this.nom=nom;
         this.supperfie = superficie;
         this.population=pop;
+    }
+
+    //////////////////////////////////////METHODES
+    public String toString()
+    {
+        return ""+this.nom+", "+this.supperfie+" kilomètres carrés, pour "+this.population+" habitants";
     }
 
 
