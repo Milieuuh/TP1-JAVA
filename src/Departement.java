@@ -36,7 +36,7 @@ public class Departement {
         String s="Ville du département "+nom+" :\n";
         for(int i=0;i<tabVilles.length;i++)
         {
-            s+=tabVilles[i].toString();
+            s+=tabVilles[i].toString()+"\n";
         }
 
         return s;
