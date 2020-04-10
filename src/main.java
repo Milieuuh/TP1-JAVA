@@ -28,6 +28,11 @@ public class main {
         System.out.println(CoteDor);
         System.out.println(saoneEtLoire);
 
+        //est identique
+
+        System.out.println(dijon.estIdentiqueA(dijon));
+        System.out.println(dijon.sontIdentiques(dijon,dijon));
+
     }
 
 

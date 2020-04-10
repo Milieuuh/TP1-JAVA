@@ -1,6 +1,6 @@
 public class Ville
 {
-    private String nom;
+    private static String nom;
     private double supperfie;
     private  int population;
 
@@ -53,4 +53,29 @@ public class Ville
         this.population = population;
     }
 
+
+    ///comparateur
+    public boolean estIdentiqueA(Ville ville)
+    {
+        boolean res=false;
+
+        if(this==ville)
+        {
+            res=true;
+        }
+
+        return res;
+    }
+
+    public boolean sontIdentiques(Ville ville1, Ville ville2)
+    {
+        boolean res=false;
+
+        if(ville1==ville2)
+        {
+            res=true;
+        }
+
+        return res;
+    }
 }
